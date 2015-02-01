@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CorePlot-CocoaTouch.h"
+
+static NSString *const X_AXIS = @"x";
+static NSString *const Y_AXIS = @"y";
+
+static NSString *const kDataLine    = @"Data Line";
+static NSString *const kDashDataLine = @"Dash Data Line";
+static NSString *const kWarningUpLine = @"Warning Up Line";
+static NSString *const kWarningLowerLine = @"Warning Lower Line";
+
+
 
 @interface JRGraphView : UIView
+
+@property (nonatomic, strong)NSMutableDictionary *plotDatasDictionary;
+@property (nonatomic, unsafe_unretained)CGFloat upwarningValue;
+@property (nonatomic, unsafe_unretained)CGFloat lowerwarningValue;
+- (void)refresh;
 
 @end
