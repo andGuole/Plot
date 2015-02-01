@@ -1,0 +1,25 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, "6.0"
+
+target "Sanmeditech" do
+
+pod 'OHAttributedLabel', '~> 3.5.4'
+pod 'MagicalRecord', '~> 2.2'
+pod 'PSAlertView', '~> 1.1'
+pod 'NSDate+Calendar', '~> 0.0.1'
+pod 'MBProgressHUD', '~> 0.9'
+pod 'iToast', '~> 0.0.1'
+pod 'CocoaAsyncSocket', '~> 7.3.5'
+pod 'CorePlot', '~> 1.5.1'
+pod 'Reachability', '~> 3.1.1'
+pod 'MTDates', '~> 0.14.3'
+pod 'CSV', '~> 0.0.2'
+pod 'UMeng', '~> 2.2.1'
+pod 'AFNetworking', '~> 2.5.0'
+
+end
+
+target "SanmeditechTests" do
+
+end
+
